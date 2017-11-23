@@ -3,6 +3,11 @@
 var pt = pt || {};
 
 pt.slideIdToFunctions = {
+  'about-us': {
+    'init': function() {
+      pt.aboutUs.init();
+    }
+  },
   'code-flowers-svg': {
     init: () => {
       pt.codeFlowers.init();

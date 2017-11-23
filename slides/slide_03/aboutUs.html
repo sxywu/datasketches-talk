@@ -6,7 +6,7 @@
 	#about-us .bio {
 		width: 25%;
 		height: 700px;
-		margin-left: 10%;
+		margin-left: 25%;
 		position: relative;
 	}
 
@@ -30,6 +30,21 @@
 	#about-us .bio .quicksand {
 		font-size: 0.8em;
 	}
+
+	#about-us .timeline {
+		position: absolute;
+		height: 900px;
+		top: 0;
+		left: 55%;
+		width: 25%;
+		font-size: 0.7em;
+		text-align: left;
+	}
+
+	#about-us .timeline-item, #about-us .year {
+		position: absolute;
+		width: 100%;
+	}
 </style>
 
 <section id="about-us">
@@ -50,4 +65,18 @@
 			</div>
 		</div>
 	</div>
+
+	<div class='timeline quicksand fragment' data-fragment-index='0'>
+		<svg class='timeline-bg'></svg>
+		<div class='timeline-item fragment' data-fragment-index='0'></div>
+		<div class='timeline-item fragment' data-fragment-index='1'></div>
+		<div class='timeline-item fragment' data-fragment-index='2'></div>
+		<div class='timeline-item fragment' data-fragment-index='3'></div>
+	</div>
+
+
+	<script>
+
+	</script>
+
 </section>
