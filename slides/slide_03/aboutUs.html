@@ -6,8 +6,9 @@
 	#about-us .bio {
 		width: 25%;
 		height: 700px;
-		margin-left: 25%;
-		position: relative;
+		left: 22%;
+		position: absolute;
+		top: 0;
 	}
 
 	#about-us .bio img {
@@ -35,7 +36,7 @@
 		position: absolute;
 		height: 900px;
 		top: 0;
-		left: 55%;
+		left: 70%;
 		width: 25%;
 		font-size: 0.7em;
 		text-align: left;
@@ -45,10 +46,17 @@
 		position: absolute;
 		width: 100%;
 	}
+
+	#about-us .months {
+		position: absolute;
+		top: 0;
+		width: 55%;
+		left: 5%;
+	}
 </style>
 
 <section id="about-us">
-	<div class='bio dark-grey'>
+	<div class='bio dark-grey fragment fade-out' data-fragment-index='3'>
 		<img src='slides/slide_03/us.jpg' />
 		<div class='left'>
 			<div class='kingBasil'>Nadieh</div>
@@ -66,12 +74,18 @@
 		</div>
 	</div>
 
-	<div class='timeline quicksand fragment' data-fragment-index='0'>
+	<div class='months fragment fade-in' data-fragment-index='3'>
+		<img src='slides/slide_03/months.jpg' width='100%' />
+	</div>
+
+	<div class='timeline quicksand'>
 		<svg class='timeline-bg'></svg>
-		<div class='timeline-item fragment' data-fragment-index='0'></div>
-		<div class='timeline-item fragment' data-fragment-index='1'></div>
-		<div class='timeline-item fragment' data-fragment-index='2'></div>
-		<div class='timeline-item fragment' data-fragment-index='3'></div>
+		<div class='timeline-item'></div>
+		<div class='timeline-item fragment fade-in' data-fragment-index='0'></div>
+		<div class='timeline-item fragment fade-in' data-fragment-index='1'></div>
+		<div class='timeline-item fragment fade-in' data-fragment-index='2'></div>
+
+		<div class='timeline-item fragment fade-in' data-fragment-index='3'></div>
 	</div>
 
 
