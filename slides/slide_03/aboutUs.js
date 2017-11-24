@@ -51,7 +51,7 @@ pt.aboutUs.init = () => {
 
   const timelineItems = container.selectAll('.timeline-item')
     .data(timelineData)
-    .style('left', `${left - 8}px`)
+    .style('left', `${left - 5}px`)
     .style('top', d => `${timeScale(d.date)}px`);
 
   timelineItems.selectAll('*').remove();
@@ -59,9 +59,9 @@ pt.aboutUs.init = () => {
   // add a dot
   timelineItems.append('div')
     .style('display', 'inline-block')
-    .style('width', '16px')
-    .style('height', '16px')
-    .style('border-radius', '16px')
+    .style('width', '10px')
+    .style('height', '10px')
+    .style('border-radius', '10px')
     .style('background-color', '#f5c2b1');
 
   // add text
