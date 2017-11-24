@@ -3,10 +3,11 @@ pt.aboutUs = pt.aboutUs || {};
 pt.aboutUs.init = () => {
   const timelineData = [
     {date: new Date('10-1-2015'), text: 'Met online in a data visualization slack'},
-    {date: new Date('01-1-2016'), text: 'Accepted to OpenVis Conf'},
+    {date: new Date('01-1-2016'), text: 'Both talk proposals accepted, OpenVis Conf'},
     {date: new Date('04-23-2016'), text: 'OpenVis Conf 2016'},
     {date: new Date('06-1-2016'), text: 'S: "do you want to collaborate?"<br />N: "yes!"'},
-    {date: new Date('09-22-2016'), text: 'Data sketch|es public launch'}
+    {date: new Date('09-22-2016'), text: 'Data sketch|es public launch'},
+    {date: new Date('04-23-2017'), text: 'Invited back to OpenVis Conf'}
   ];
   const years = [
     {date: new Date('1-1-2016'), text: '2016'},
