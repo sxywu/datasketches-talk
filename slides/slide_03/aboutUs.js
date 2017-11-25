@@ -2,12 +2,13 @@ pt.aboutUs = pt.aboutUs || {};
 
 pt.aboutUs.init = () => {
   const timelineData = [
-    {date: new Date('10-1-2015'), text: 'Met online in a data visualization slack'},
-    {date: new Date('01-1-2016'), text: 'Both talk proposals accepted, OpenVis Conf'},
+    {date: new Date('10-1-2015'), text: `Met online in a data visualization
+    <img src='slides/slide_03/slack.png' height='32px'/>`},
+    {date: new Date('01-1-2016'), text: 'Both talk proposals accepted to OpenVis Conf'},
     {date: new Date('04-23-2016'), text: 'OpenVis Conf 2016'},
     {date: new Date('06-1-2016'), text: 'S: "do you want to collaborate?"<br />N: "yes!"'},
-    {date: new Date('09-22-2016'), text: 'Data sketch|es public launch'},
-    {date: new Date('04-23-2017'), text: 'Invited back to OpenVis Conf'}
+    {date: new Date('09-22-2016'), text: 'Project public launch'},
+    {date: new Date('04-23-2017'), text: 'Invited back to OpenVis Conf 2017'}
   ];
   const years = [
     {date: new Date('1-1-2016'), text: '2016'},
@@ -24,7 +25,7 @@ pt.aboutUs.init = () => {
     .scale(timeScale)
     .tickPadding(5)
     .tickSizeOuter(0)
-    .tickFormat(d => d.getMonth() === 0 ? d.getFullYear() : '');
+    .tickFormat(d => d.getMonth() === 0 ? d.getFullYear() : d3.timeFormat('%b')(d));
 
   const container = d3.select('#about-us');
 
@@ -38,13 +39,13 @@ pt.aboutUs.init = () => {
     .attr('transform', `translate(${left}, 0)`)
     .call(axis);
   axisG.selectAll('text')
-    .attr('class', d => d.getMonth() === 0 ? 'kingBasil' : 'quicksand')
+    .attr('class', 'quicksand')
     .style('fill', d => d.getMonth() === 0 ? '#f5c2b1' : '#33383b')
     .style('font-size', d => d.getMonth() === 0 ? '32px' : '18px');
   svg.append('text')
     .attr('transform', `translate(${left}, ${height})`)
     .attr('text-anchor', 'middle')
-    .attr('dy', '1em')
+    .attr('dy', '1.35em')
     .classed('kingBasil', true)
     .style('fill', '#f5c2b1')
     .style('font-size', '48px')
